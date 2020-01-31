@@ -1,10 +1,12 @@
 # [Quick - Website UI Kit (FREE)](https://webpixels.github.io/quick-website-ui-kit-demo/)
 
-![alt text](https://webpixels.s3.eu-central-1.amazonaws.com/public/themes/quick-website-ui-kit-demo.png "Quick - Website UI Kit (FREE)")
+![alt text](https://webpixels.s3.eu-central-1.amazonaws.com/public/themes/quick-website-ui-kit-demo.jpg "Quick - Website UI Kit (FREE)")
 
-## Links:
+Quick Website UI Kit is an innovative HTML template solution, based on Bootstrap 4, which combines beautiful design and flawless functionality.
 
-+ [Demo Page](https://webpixels.github.io/quick-website-ui-kit-demo/)
+This is a free light version version that can be downloaded and used as needed (even in commercial projects).
+
+[See Demo](https://webpixels.github.io/quick-website-ui-kit-demo/)
 
 ## Download
 
@@ -29,6 +31,11 @@ Automate painful or time-consuming tasks in your development workflow, so you ca
 ## Documentation
 
 No matter you are a developer or new to web design, you will find our theme very easy to customize with an intuitive HTML markup. In the theme's pack you will find a docs folder with all the information you need to start, customize and more.
+
+## Wanna go PRO?
+
+- [Open Product Page](https://webpixels.io/themes/quick-website-ui-kit)
+- [Live Preview](https://preview.webpixels.io/quick-website-ui-kit/)
 
 ## Authors
 
