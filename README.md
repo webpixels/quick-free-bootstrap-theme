@@ -1,6 +1,6 @@
 # [Quick - Website UI Kit (FREE)](https://webpixels.github.io/quick-website-ui-kit-demo/)
 
-![alt text](https://webpixels.s3.eu-central-1.amazonaws.com/public/themes/quick-website-ui-kit-demo.jpg "Quick - Website UI Kit (FREE)")
+![alt text](https://webpixels.s3.eu-central-1.amazonaws.com/public/github/quick-website-ui-kit-demo.jpg "Quick - Website UI Kit (FREE)")
 
 Quick Website UI Kit is an innovative HTML template solution, based on Bootstrap 4, which combines beautiful design and flawless functionality.
 
