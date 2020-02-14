@@ -42,8 +42,9 @@ No matter you are a developer or new to web design, you will find our theme very
 **Alexis Enache**
 
 + <http://webpixels.io>
-+ <http://instagram.com/webpixelsofficial>
++ <http://instagram.com/webpxs>
 + <http://dribbble.com/webpixels>
++ <http://twitter.com/webpxs>
 
 ## Typeface
 
@@ -66,6 +67,6 @@ Need help?
 
 Simply send us an email at support@webpixels.io
 
-## 40k+ happy customers
+## 50k+ happy customers
 
 Over the past 6 years, we’ve sold over 100k themes and learned the best way to build, maintain, and support our themes. Our mission is to bring the best development experience to designers and developers by offering the tools needed for having a quick and solid start in most web projects.
