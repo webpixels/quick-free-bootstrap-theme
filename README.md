@@ -1,4 +1,4 @@
-# [Quick - Free Bootstrap Theme](https://preview.webpixels.io/quick-free-bootstrap-theme/)
+# [Quick - Free Bootstrap Theme](https://preview.webpixels.io/quick-free-bootstrap-theme?utm_source=github&utm_medium=readme&utm_campaign=themes&utm_content=quick-free-bootstrap-theme)
 
 ![Quick - Free Bootstrap Theme Cover](https://webpixels.s3.eu-central-1.amazonaws.com/public/github/quick-free-bootstrap-theme.jpg "Quick - Free Bootstrap Theme")
 
@@ -6,7 +6,7 @@ Quick is an innovative HTML template solution, based on Bootstrap 4, which combi
 
 This is a free light version version that can be downloaded and used as needed (even in commercial projects).
 
-[See Demo](https://preview.webpixels.io/quick-free-bootstrap-theme/)
+[See Demo](https://preview.webpixels.io/quick-free-bootstrap-theme?utm_source=github&utm_medium=readme&utm_campaign=themes&utm_content=quick-free-bootstrap-theme)
 
 ## Download
 
@@ -17,8 +17,8 @@ Two quick-start options are available:
 
 ## Interested in the PRO version?
 
-- [Open Product Page](https://webpixels.io/themes/quick-website-ui-kit)
-- [Live Preview](https://preview.webpixels.io/quick-website-ui-kit/)
+- [Open Product Page](https://webpixels.io/themes/quick-website-ui-kit?utm_source=github&utm_medium=readme&utm_campaign=themes&utm_content=quick-free-bootstrap-theme)
+- [Live Preview](https://preview.webpixels.io/quick-website-ui-kit?utm_source=github&utm_medium=readme&utm_campaign=themes&utm_content=quick-free-bootstrap-theme)
 
 ## Install
 
