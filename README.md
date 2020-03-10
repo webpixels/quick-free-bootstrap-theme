@@ -43,7 +43,7 @@ Quick is made using the  typeface, which can be downloaded for free here: https:
 
 ## Links
 
-More products from Webpixels: <https://webpixels.io/>
+More products from Webpixels: [https://webpixels.io](https://webpixels.io?utm_source=github&utm_medium=readme&utm_campaign=themes&utm_content=boomerang-free-bootstrap-ui-kit)
 
 ### Social Media:
 
