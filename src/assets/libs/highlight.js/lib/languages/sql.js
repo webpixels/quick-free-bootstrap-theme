@@ -135,16 +135,17 @@ module.exports = function(hljs) {
           {
             className: 'string',
             begin: '\'', end: '\'',
-            contains: [{begin: '\'\''}]
+            contains: [hljs.BACKSLASH_ESCAPE, {begin: '\'\''}]
           },
           {
             className: 'string',
             begin: '"', end: '"',
-            contains: [{begin: '""'}]
+            contains: [hljs.BACKSLASH_ESCAPE, {begin: '""'}]
           },
           {
             className: 'string',
-            begin: '`', end: '`'
+            begin: '`', end: '`',
+            contains: [hljs.BACKSLASH_ESCAPE]
           },
           hljs.C_NUMBER_MODE,
           hljs.C_BLOCK_COMMENT_MODE,

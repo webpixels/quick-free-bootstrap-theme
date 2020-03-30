@@ -11,78 +11,16 @@ module.exports = function(hljs) {
     lexemes: ELIXIR_IDENT_RE,
     keywords: ELIXIR_KEYWORDS
   };
-
-  var SIGIL_DELIMITERS = '[/|([{<"\']'
-  var LOWERCASE_SIGIL = {
-    className: 'string',
-    begin: '~[a-z]' + '(?=' + SIGIL_DELIMITERS + ')',
-    contains: [
-      {
-        endsParent:true,
-        contains: [{
-          contains: [hljs.BACKSLASH_ESCAPE, SUBST],
-          variants: [
-            { begin: /"/, end: /"/ },
-            { begin: /'/, end: /'/ },
-            { begin: /\//, end: /\// },
-            { begin: /\|/, end: /\|/ },
-            { begin: /\(/, end: /\)/ },
-            { begin: /\[/, end: /\]/ },
-            { begin: /\{/, end: /\}/ },
-            { begin: /</, end: />/ }
-          ]
-        }]
-      },
-    ],
-  };
-
-  var UPCASE_SIGIL = {
-    className: 'string',
-    begin: '~[A-Z]' + '(?=' + SIGIL_DELIMITERS + ')',
-    contains: [
-      { begin: /"/, end: /"/ },
-      { begin: /'/, end: /'/ },
-      { begin: /\//, end: /\// },
-      { begin: /\|/, end: /\|/ },
-      { begin: /\(/, end: /\)/ },
-      { begin: /\[/, end: /\]/ },
-      { begin: /\{/, end: /\}/ },
-      { begin: /\</, end: /\>/ }
-    ]
-  };
-
   var STRING = {
     className: 'string',
     contains: [hljs.BACKSLASH_ESCAPE, SUBST],
     variants: [
       {
-        begin: /"""/, end: /"""/,
-      },
-      {
-        begin: /'''/, end: /'''/,
-      },
-      {
-        begin: /~S"""/, end: /"""/,
-        contains: []
-      },
-      {
-        begin: /~S"/, end: /"/,
-        contains: []
-      },
-      {
-        begin: /~S'''/, end: /'''/,
-        contains: []
-      },
-      {
-        begin: /~S'/, end: /'/,
-        contains: []
-      },
-      {
         begin: /'/, end: /'/
       },
       {
         begin: /"/, end: /"/
-      },
+      }
     ]
   };
   var FUNCTION = {
@@ -101,8 +39,6 @@ module.exports = function(hljs) {
   });
   var ELIXIR_DEFAULT_CONTAINS = [
     STRING,
-    UPCASE_SIGIL,
-    LOWERCASE_SIGIL,
     hljs.HASH_COMMENT_MODE,
     CLASS,
     FUNCTION,

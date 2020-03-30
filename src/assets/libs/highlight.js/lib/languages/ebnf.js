@@ -3,7 +3,7 @@ module.exports = function(hljs) {
 
     var nonTerminalMode = {
         className: "attribute",
-        begin: /^[ ]*[a-zA-Z][a-zA-Z-_]*([\s-_]+[a-zA-Z][a-zA-Z]*)*/
+        begin: /^[ ]*[a-zA-Z][a-zA-Z-]*([\s-]+[a-zA-Z][a-zA-Z]*)*/
     };
 
     var specialSequenceMode = {
@@ -12,19 +12,12 @@ module.exports = function(hljs) {
     };
 
     var ruleBodyMode = {
-        begin: /=/, end: /[.;]/,
+        begin: /=/, end: /;/,
         contains: [
             commentMode,
             specialSequenceMode,
-            {
-              // terminals
-              className: 'string',
-              variants: [
-                hljs.APOS_STRING_MODE,
-                hljs.QUOTE_STRING_MODE,
-                {begin: '`', end: '`'},
-              ]
-            },
+            // terminals
+            hljs.APOS_STRING_MODE, hljs.QUOTE_STRING_MODE
         ]
     };
 

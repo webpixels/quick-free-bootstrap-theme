@@ -25,7 +25,7 @@
             -webkit-font-smoothing: antialiased;
             font-family: $icon-font-family;
             font-weight: 700;
-            font-size: 85%;
+            font-size: $caret-font-size;
 
             @if $direction == down {
                 @include caret-down;

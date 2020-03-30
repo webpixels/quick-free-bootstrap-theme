@@ -21,7 +21,7 @@ module.exports = function(hljs) {
         className: 'string',
         variants: [
           hljs.QUOTE_STRING_MODE,
-          hljs.APOS_STRING_MODE,
+          {begin: '\'', end: '[^\\\\]\''},
           {begin: '`', end: '`'},
         ]
       },
