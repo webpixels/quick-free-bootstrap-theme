@@ -1,6 +1,6 @@
 # [Quick - Free Bootstrap Theme](https://preview.webpixels.io/quick-free-bootstrap-theme?utm_source=github&utm_medium=readme&utm_campaign=themes&utm_content=quick-free-bootstrap-theme)
 
-![Quick - Free Bootstrap Theme Cover](https://webpixels.s3.eu-central-1.amazonaws.com/public/github/quick-free-bootstrap-theme.jpg "Quick - Free Bootstrap Theme")
+![Quick - Free Bootstrap Theme Cover](https://webpixels.s3.eu-central-1.amazonaws.com/public/themes/quick-free-website-ui-kit-v1.1.0.jpg "Quick - Free Bootstrap Theme")
 
 Quick is an innovative HTML template solution, based on Bootstrap 4, which combines beautiful design and flawless functionality.
 
