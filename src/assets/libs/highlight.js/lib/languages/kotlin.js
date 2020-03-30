@@ -41,7 +41,7 @@ module.exports = function(hljs) {
     className: 'string',
     variants: [
       {
-        begin: '"""', end: '"""(?=[^"])',
+        begin: '"""', end: '"""',
         contains: [VARIABLE, SUBST]
       },
       // Can't use built-in modes easily, as we want to use STRING in the meta

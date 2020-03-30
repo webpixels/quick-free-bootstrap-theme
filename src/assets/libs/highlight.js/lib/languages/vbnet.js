@@ -9,7 +9,7 @@ module.exports = function(hljs) {
         'each equals else elseif end enum erase error event exit explicit finally for friend from function ' + /* e-f */
         'get global goto group handles if implements imports in inherits interface into is isfalse isnot istrue iterator ' + /* g-i */
         'join key let lib like loop me mid mod module mustinherit mustoverride mybase myclass ' + /* j-m */
-        'nameof namespace narrowing new next not notinheritable notoverridable ' + /* n */
+        'namespace narrowing new next not notinheritable notoverridable ' + /* n */
         'of off on operator option optional or order orelse overloads overridable overrides ' + /* o */
         'paramarray partial preserve private property protected public ' + /* p */
         'raiseevent readonly redim rem removehandler resume return ' + /* r */

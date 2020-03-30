@@ -37,8 +37,16 @@ module.exports = function(hljs) {
     ]
   };
   /* Variable assignment */
-  var ASSIGNMENT = {
-    begin: '^' + hljs.UNDERSCORE_IDENT_RE + '\\s*(?=[:+?]?=)'
+  var VAR_ASSIG = {
+    begin: '^' + hljs.UNDERSCORE_IDENT_RE + '\\s*[:+?]?=',
+    illegal: '\\n',
+    returnBegin: true,
+    contains: [
+      {
+        begin: '^' + hljs.UNDERSCORE_IDENT_RE, end: '[:+?]?=',
+        excludeEnd: true,
+      }
+    ]
   };
   /* Meta targets (.PHONY) */
   var META = {
@@ -64,7 +72,7 @@ module.exports = function(hljs) {
       VARIABLE,
       QUOTE_STRING,
       FUNC,
-      ASSIGNMENT,
+      VAR_ASSIG,
       META,
       TARGET,
     ]

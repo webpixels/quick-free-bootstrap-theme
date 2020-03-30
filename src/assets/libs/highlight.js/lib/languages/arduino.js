@@ -86,7 +86,7 @@ module.exports = function(hljs) {
         'DEFAULT OUTPUT INPUT HIGH LOW'
   };
 
-  var ARDUINO = hljs.requireLanguage('cpp').rawDefinition();
+  var ARDUINO = hljs.getLanguage('cpp').rawDefinition();
 
   var kws = ARDUINO.keywords;
 

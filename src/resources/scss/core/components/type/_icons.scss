@@ -7,3 +7,13 @@
     stroke-linecap: $svg-icon-stroke-linecap;
     stroke-linejoin: $svg-icon-stroke-linecap;
 }
+
+.svg-text {
+    display: inline-flex;
+    align-items: center;
+
+    svg {
+        position: relative;
+        // bottom: .125rem;
+    }
+}

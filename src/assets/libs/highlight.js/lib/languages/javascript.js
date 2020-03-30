@@ -1,12 +1,4 @@
 module.exports = function(hljs) {
-  var FRAGMENT = {
-    begin: '<>',
-    end: '</>'
-  };
-  var XML_TAG = {
-    begin: /<[A-Za-z0-9\\._:-]+/,
-    end: /\/[A-Za-z0-9\\._:-]+>|\/>/
-  };
   var IDENT_RE = '[A-Za-z$_][0-9A-Za-z$_]*';
   var KEYWORDS = {
     keyword:
@@ -88,7 +80,7 @@ module.exports = function(hljs) {
   ]);
 
   return {
-    aliases: ['js', 'jsx', 'mjs', 'cjs'],
+    aliases: ['js', 'jsx'],
     keywords: KEYWORDS,
     contains: [
       {
@@ -106,39 +98,6 @@ module.exports = function(hljs) {
       CSS_TEMPLATE,
       TEMPLATE_STRING,
       hljs.C_LINE_COMMENT_MODE,
-      hljs.COMMENT(
-        '/\\*\\*',
-        '\\*/',
-        {
-          relevance : 0,
-          contains : [
-            {
-              className : 'doctag',
-              begin : '@[A-Za-z]+',
-              contains : [
-                {
-                  className: 'type',
-                  begin: '\\{',
-                  end: '\\}',
-                  relevance: 0
-                },
-                {
-                  className: 'variable',
-                  begin: IDENT_RE + '(?=\\s*(-)|$)',
-                  endsParent: true,
-                  relevance: 0
-                },
-                // eat spaces (not newlines) so we can find
-                // types or variables
-                {
-                  begin: /(?=[^\n])\s/,
-                  relevance: 0
-                },
-              ]
-            }
-          ]
-        }
-      ),
       hljs.C_BLOCK_COMMENT_MODE,
       NUMBER,
       { // object attr container
@@ -188,19 +147,20 @@ module.exports = function(hljs) {
             end: /\s*/,
             skip: true,
           },
-          { // JSX
-            variants: [
-              { begin: FRAGMENT.begin, end: FRAGMENT.end },
-              { begin: XML_TAG.begin, end: XML_TAG.end }
-            ],
+          { // E4X / JSX
+            begin: /</, end: /(\/[A-Za-z0-9\\._:-]+|[A-Za-z0-9\\._:-]+\/)>/,
             subLanguage: 'xml',
             contains: [
+              { begin: /<[A-Za-z0-9\\._:-]+\s*\/>/, skip: true },
               {
-                begin: XML_TAG.begin, end: XML_TAG.end, skip: true,
-                contains: ['self']
+                begin: /<[A-Za-z0-9\\._:-]+/, end: /(\/[A-Za-z0-9\\._:-]+|[A-Za-z0-9\\._:-]+\/)>/, skip: true,
+                contains: [
+                  { begin: /<[A-Za-z0-9\\._:-]+\s*\/>/, skip: true },
+                  'self'
+                ]
               }
             ]
-          },
+          }
         ],
         relevance: 0
       },

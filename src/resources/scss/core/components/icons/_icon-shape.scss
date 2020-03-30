@@ -13,18 +13,27 @@
 	width: $icon-size;
 	height: $icon-size;
 
-	i, svg {
+	i {
 		font-size: 1.125rem;
 	}
 
+	svg {
+		width: $icon-size/ 2.5;
+		height: $icon-size/ 2.5;
+	}
 
 
 	&.icon-xl {
 		width: $icon-size-xl;
 		height: $icon-size-xl;
 
-		i, svg {
+		i {
 			font-size: 2.25rem;
+		}
+
+		svg {
+			width: $icon-size-xl/ 2.5;
+			height: $icon-size-xl/ 2.5;
 		}
 	}
 
@@ -33,8 +42,13 @@
 		width: $icon-size-lg;
 		height: $icon-size-lg;
 
-		i, svg {
+		i {
 			font-size: 1.75rem;
+		}
+
+		svg {
+			width: $icon-size-lg/ 2.5;
+			height: $icon-size-lg/ 2.5;
 		}
 	}
 
@@ -42,8 +56,13 @@
 		width: $icon-size-sm;
 		height: $icon-size-sm;
 
-		i, svg {
-			font-size: 1rem;
+		i {
+			font-size: $font-size-sm;
+		}
+
+		svg {
+			width: $icon-size-sm/ 2.5;
+			height: $icon-size-sm/ 2.5;
 		}
 	}
 
@@ -51,8 +70,13 @@
 		width: $icon-size-xs;
 		height: $icon-size-xs;
 
-		i, svg {
-			font-size: .75rem;
+		i {
+			font-size: $font-size-xs;
+		}
+
+		svg {
+			width: $icon-size-xs/ 2.5;
+			height: $icon-size-xs/ 2.5;
 		}
 	}
 }

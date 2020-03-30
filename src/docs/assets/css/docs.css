@@ -837,7 +837,7 @@
 
     vertical-align: top;
 
-    border: 1px solid #eff2f7;
+    border: 1px solid #eaecf3;
 }
 .docs-content > table > thead > tr > th > p:last-child,
 .docs-content > table > thead > tr > td > p:last-child,
@@ -901,7 +901,7 @@
 
     padding: 2rem;
 
-    border: 1px solid #eff2f7;
+    border: 1px solid #eaecf3;
     border-radius: .75rem; 
     background: #fff;
 }

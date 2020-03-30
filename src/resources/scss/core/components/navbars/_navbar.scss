@@ -121,17 +121,19 @@
     left: 0;
     z-index: $zindex-fixed;
 
-    .container {
-        &::after {
-            content: "";
-            position: absolute;
-            right: 0;
-            bottom: -$navbar-padding-y;
-            left: 0;
-            border-top: 1px solid rgba(255, 255, 255, .2);
+    .navbar-main {
+        .container:not(.border-0) {
+            &::after {
+                content: "";
+                position: absolute;
+                right: 0;
+                bottom: -$navbar-padding-y;
+                left: 0;
+                border-top: 1px solid rgba(255, 255, 255, .2);
+            }
         }
     }
-
+    
     .navbar-top {
         background-color: transparent !important;
         border: 0;
